@@ -30,6 +30,11 @@ li {
     font-size: 30px;
 }
 
+.place {
+    color: white;
+    font-size: 30px;
+}
+
 .showing {
     display: block;
 }

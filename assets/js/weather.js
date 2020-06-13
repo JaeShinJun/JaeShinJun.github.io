@@ -1,4 +1,5 @@
 const weather = document.querySelector(".js-weather");
+const place = document.querySelector(".js-place")
 
 const COORDS = 'coords';
 
@@ -10,7 +11,9 @@ function getWeather(lat, lon) {
         return(response.json());
     }).then(function(json) {
         const temperature = json.main.temp;
-        // const place = json.name;
+        const placeName = json.name;
+        
+        place.innerText = `Place : ${placeName}`;
         weather.innerText = `Temperature : ${temperature}`;
     });
 }
@@ -48,6 +51,8 @@ function loadCoords() {
         const parsedCoords = JSON.parse(loadedCoords);
         getWeather(parsedCoords.latitude, parsedCoords.longitude);
     }
+
+    
 }
 
 function init() {
