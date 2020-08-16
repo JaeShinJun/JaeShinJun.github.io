@@ -1,3 +1,6 @@
 [submodule "kokoa"]
 	path = kokoa
 	url = https://github.com/JaeShinJun/kokoa.git
+[submodule "JaeShinPage"]
+	path = JaeShinPage
+	url = https://github.com/JaeShinJun/JaeShinPage.git
